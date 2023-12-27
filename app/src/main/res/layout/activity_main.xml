@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/dent_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img" />
+
+    <TextView
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dent_image"
+        android:layout_marginTop="16dp"
+        android:text="Left Angle: "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/left"
+        android:layout_marginTop="8dp"
+        android:text="Right Angle: "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnProccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/right"
+        android:layout_marginTop="16dp"
+        android:text="select" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/right"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/btnProccess"
+        android:text="Send" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/right"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/btnSend"
+        android:layout_toRightOf="@id/btnSend"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/btnDisc"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-101dp"
+        android:layout_marginBottom="24dp"
+        android:layout_toRightOf="@id/btnReset"
+        android:text="Disc" />
+
+</RelativeLayout>
